@@ -30,6 +30,6 @@ class LandmarksController < ApplicationController
     @landmark = Landmark.find(params[:id])
     @landmark.update(params[:landmark])
 
-    redirect to :"/landmarks/#{@landmark.id}"
+    redirect to :"landmarks/#{@landmark.id}"
   end
 end
